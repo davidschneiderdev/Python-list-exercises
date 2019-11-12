@@ -1,6 +1,6 @@
 
-matrix1 = [[1, 3], [2, 4]]
-matrix2 = [[5, 2], [1, 0]]
+matrix1 = [[1, 3, 5], [2, 4, 6]]
+matrix2 = [[5, 2, 4], [1, 0, 4]]
 
 matrix1_lst = []
 matrix2_lst = []
@@ -20,7 +20,11 @@ for num in range(matrix1_len):
     product = matrix1_lst[num] + matrix2_lst[num]
     new_lst.append(product)
 
-print(new_lst)
+result_matrix_row1 = new_lst[:len(new_lst)//2]
+result_matrix_row2 = new_lst[len(new_lst)//2:]
+
+print(result_matrix_row1)
+print(result_matrix_row2)
 
 
 
